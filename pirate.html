@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html> <head> <style>
-    #target{
-        background-color: rgb(164, 224, 204) ;
-    }
     .flex-container {
       display: flex;  flex-direction:row;
       background-color:rgb(185, 212, 212);
@@ -42,7 +39,7 @@
 		<p class="lead" id="search_traps">Click on the locations to search for treasure, beware the traps</p>
         <p class = "lead" id="locations">Number of locations checked is zero</p>
         <p class = "lead" id="penalty">Penalty is zero</p>
-        <p class = "lead" id="click_help">Click for help</p>
+        <p class = "lead" id="click_help" onclick="help()">Click for help</p>
         <p class="lead" id="help">Help report</p>
 	</div>
     <br>
@@ -50,9 +47,6 @@
     <h6 class="display-4">game field</h6>
     <div class="container">
         <div class="row">
-            
-        </div>
-              <div class="row">
               <div class="col-md-2"><img src="treasure location.jpg" id="0" alt="searchlocation" style="width:200px;height:100px;" onclick="check(0)"></div>
               <div class="col-md-2"><img src="treasure location.jpg" id="1" alt="searchlocation" style="width:200px;height:100px;" onclick="check(1)"></div>
               <div class="col-md-2"><img src="treasure location.jpg" id="2" alt="searchlocation" style="width:200px;height:100px;" onclick="check(2)"></div>
@@ -66,12 +60,12 @@
               <div class="col-md-2"><img src="treasure location.jpg" id="8" alt="searchlocation" style="width:200px;height:100px;" onclick="check(8)"></div>
               <div class="col-md-2"><img src="treasure location.jpg" id="9" alt="searchlocation" style="width:200px;height:100px;" onclick="check(9)"></div>
         </div>    
-            <div class="row" style="width:200px;height:100px;" >
-            <div class="col-md-2"><img src="treasure location.jpg" id="10" alt="searchlocation"  onclick="check(10)"></div>
-            <div class="col-md-2"><img src="treasure location.jpg" id="11" alt="searchlocation"  onclick="check(11)"></div>
-            <div class="col-md-2"><img src="treasure location.jpg" id="12" alt="searchlocation"  onclick="check(12)"></div>
-            <div class="col-md-2"><img src="treasure location.jpg" id="13" alt="searchlocation"  onclick="check(13)"></div>
-            <div class="col-md-2"><img src="treasure location.jpg" id="14" alt="searchlocation"  onclick="check(14)"></div>
+            <div class="row">
+            <div class="col-md-2"><img src="treasure location.jpg" id="10" alt="searchlocation" style="width:200px;height:100px;" onclick="check(10)"></div>
+            <div class="col-md-2"><img src="treasure location.jpg" id="11" alt="searchlocation" style="width:200px;height:100px;"  onclick="check(11)"></div>
+            <div class="col-md-2"><img src="treasure location.jpg" id="12" alt="searchlocation" style="width:200px;height:100px;" onclick="check(12)"></div>
+            <div class="col-md-2"><img src="treasure location.jpg" id="13" alt="searchlocation" style="width:200px;height:100px;" onclick="check(13)"></div>
+            <div class="col-md-2"><img src="treasure location.jpg" id="14" alt="searchlocation" style="width:200px;height:100px;" onclick="check(14)"></div>
         </div>
             <div class="row">
             <div class="col-md-2"><img src="treasure location.jpg" id="15" alt="searchlocation" style="width:100px;height:100px;" onclick="check(15)"></div>
@@ -79,7 +73,6 @@
             <div class="col-md-2"><img src="treasure location.jpg" id="17" alt="searchlocation" style="width:100px;height:100px;" onclick="check(17)"></div>
             <div class="col-md-2"><img src="treasure location.jpg" id="18" alt="searchlocation" style="width:100px;height:100px;" onclick="check(18)"></div>
             <div class="col-md-2"><img src="treasure location.jpg" id="19" alt="searchlocation" style="width:100px;height:100px;" onclick="check(19)"></div>
-        </div>
         </div>
            <div class="row">
            <div class="col-md-2"><img src="treasure location.jpg" id="20" alt="searchlocation" style="width:100px;height:100px;" onclick="check(20)"></div>
