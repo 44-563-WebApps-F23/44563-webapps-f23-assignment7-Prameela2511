@@ -27,11 +27,7 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-
 </head>
-
-
-
 <body>
     <h3 class="display-3" style="border: 4px dashed royalblue;" >Find the treasure by Pathuri Prameela</h3>
 		
@@ -82,7 +78,7 @@
            <div class="col-md-2"><img src="treasure location.jpg" id="24" alt="searchlocation" style="width:200px;height:100px;" onclick="check(24)"></div>
         </div>
     </div>
-    <div id="button" type="button" class="btn btn-success" onclick="reset()">New Game</div>	
+    <div id="button" type="button" class="btn btn-success" onclick="reset()">New Game</div>
 </body>
 <script>
 	let ids = []
@@ -160,7 +156,6 @@
     help_text = document.getElementById("help")
     help_text.innerHTML=`Help report ${report}`
   }
-
   function reset() {
             checkCount = 0;
             penalty = 0
