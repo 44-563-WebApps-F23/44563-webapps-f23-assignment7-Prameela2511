@@ -44,9 +44,9 @@
 
     <br>
 		<div class="flex-container" id="target">
-		  <div class="merger">row item 1</div>   
-		  <div class="merger">row item 2</div>  
-		  <div class="merger">row item 3</div>  
+		  <div class="merger">row 1</div>   
+		  <div class="merger">row 2</div>  
+		  <div class="merger">row 3</div>  
 		</div>
 	
 	<p> Press the button to create an new element of type div and then add it to the container.</p>
@@ -54,7 +54,6 @@
 		<button onclick="makeNewDiv()">Add end</button>
         <button onclick="addFront()" >Add Front</button>
         <button onclick="remove()">Remove</button>
-        <button onclick="swap()">Swap</button>
     </div>
         
 	
@@ -67,11 +66,29 @@
         element.className = "merger"
 		element.style.color = "orange"
 
-		/* add it to the container */
 		let container = document.getElementById('target')
 		container.appendChild(element)
 		
 	}
+
+    function remove(){
+        let mergerItems = document.getElementsByClassName("merger")
+        const lengthOfmergerItems = mergerItems.length
+        if(lengthOfmergerItems>0)
+        {
+            mergerItems[Math.floor(lengthOfmergerItems/2)].remove()
+        }
+    }
+    function addFront(){
+        let element = document.createElement("div")
+        element.innerHTML = document.getElementById("text").value;
+        element.className = "merger"
+        element.style.color = "orange"
+
+        let parent = document.getElementsByClassName("merger")[0].parentNode
+        let childElement = document.getElementsByClassName("merger")[0]
+        parent.insertBefore(element,childElement)
+    }
 
     
 </script>
