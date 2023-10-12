@@ -2,3 +2,8 @@
 # WebApps-F23-Assignment-7
 An assignment on java script modifying the DOM and using anonymous callback functions.
 
+Hosted at[Pirate link](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-Prameela2511/pirate.html)
+
+Hosted at[React link](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-Prameela2511/react.html)
+
+Hosted at[Merger link](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-Prameela2511/merger.html)
